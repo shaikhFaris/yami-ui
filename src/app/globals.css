@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --background: #0f0f1a;
+  --foreground: #e2e2f5;
+  --card: #1a1a2e;
+  --card-foreground: #e2e2f5;
+  --popover: #1a1a2e;
+  --popover-foreground: #e2e2f5;
+  --primary: #a48fff;
+  --primary-foreground: #0f0f1a;
+  --secondary: #2d2b55;
+  --secondary-foreground: #c4c2ff;
+  --muted: #222244;
+  --muted-foreground: #a0a0c0;
+  --accent: #303060;
+  --accent-foreground: #e2e2f5;
+  --destructive: #ff5470;
+  --destructive-foreground: #ffffff;
+  --border: #303052;
+  --input: #303052;
+  --ring: #a48fff;
+  --chart-1: #a48fff;
+  --chart-2: #7986cb;
+  --chart-3: #64b5f6;
+  --chart-4: #4db6ac;
+  --chart-5: #ff79c6;
+  --sidebar: #1a1a2e;
+  --sidebar-foreground: #e2e2f5;
+  --sidebar-primary: #a48fff;
+  --sidebar-primary-foreground: #0f0f1a;
+  --sidebar-accent: #303060;
+  --sidebar-accent-foreground: #e2e2f5;
+  --sidebar-border: #303052;
+  --sidebar-ring: #a48fff;
+  --font-sans: Oxanium, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: JetBrains Mono, monospace;
+  --radius: 0.5rem;
+  --shadow-2xs: 0px 4px 10px 0px hsl(240 30% 25% / 0.06);
+  --shadow-xs: 0px 4px 10px 0px hsl(240 30% 25% / 0.06);
+  --shadow-sm: 0px 4px 10px 0px hsl(240 30% 25% / 0.12), 0px 1px 2px -1px hsl(240 30% 25% / 0.12);
+  --shadow: 0px 4px 10px 0px hsl(240 30% 25% / 0.12), 0px 1px 2px -1px hsl(240 30% 25% / 0.12);
+  --shadow-md: 0px 4px 10px 0px hsl(240 30% 25% / 0.12), 0px 2px 4px -1px hsl(240 30% 25% / 0.12);
+  --shadow-lg: 0px 4px 10px 0px hsl(240 30% 25% / 0.12), 0px 4px 6px -1px hsl(240 30% 25% / 0.12);
+  --shadow-xl: 0px 4px 10px 0px hsl(240 30% 25% / 0.12), 0px 8px 10px -1px hsl(240 30% 25% / 0.12);
+  --shadow-2xl: 0px 4px 10px 0px hsl(240 30% 25% / 0.30);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
