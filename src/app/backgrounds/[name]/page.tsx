@@ -1,9 +1,9 @@
 import BlackHole from "@/bg-components/BlackHole";
 import MetallicWaves from "@/bg-components/MetallicWaves";
+import ShaderArt from "@/bg-components/ShaderArt";
 
 export default async function page({ params }: { params: Promise<{ name: string }> }) {
   const name = (await params).name;
-  console.log(name);
 
   if (name === "metallic-waves") {
     return (
@@ -35,6 +35,14 @@ export default async function page({ params }: { params: Promise<{ name: string 
               absolute div
             </p>
           </div> */}
+        </div>
+      </div>
+    );
+  } else if (name === "shader-art") {
+    return (
+      <div className="">
+        <div className=" border border-[var(--border)] relative rounded-[var(--radius)] overflow-hidden flex justify-center items-center w-full">
+          <ShaderArt width={"100%"} height="80vh" />
         </div>
       </div>
     );

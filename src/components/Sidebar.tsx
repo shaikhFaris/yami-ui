@@ -22,6 +22,12 @@ export default function Sidebar() {
               >
                 Metallic Waves
               </Link>
+              <Link
+                className="hover:text-[var(--primary)] duration-150 hover:translate-0.5"
+                href={"/backgrounds/shader-art"}
+              >
+                Shader Art
+              </Link>
             </div>
           </div>
         </div>

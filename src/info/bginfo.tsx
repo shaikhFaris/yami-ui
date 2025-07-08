@@ -7,5 +7,9 @@ const bgs = [
     slug: "black-hole",
     name: "Black Hole",
   },
+  {
+    slug: "shader-art",
+    name: "Shader Art",
+  },
 ];
 export default bgs;

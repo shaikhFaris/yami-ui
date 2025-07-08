@@ -1,11 +1,9 @@
-// @ts-nocheck
-
 "use client";
 
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useThree } from "@react-three/fiber";
 import * as THREE from "three";
-import { useMemo, useRef, forwardRef } from "react";
+import { useRef } from "react";
 import { extend } from "@react-three/fiber";
 
 extend({ ShaderMaterial: THREE.ShaderMaterial });
@@ -91,11 +89,13 @@ const MyShaderMaterial = {
 };
 
 function ShaderPlane() {
-  const shaderRef = useRef();
+  const shaderRef = useRef<THREE.ShaderMaterial>(null);
   const { viewport } = useThree();
   useFrame(({ clock, size }) => {
-    shaderRef.current.uniforms.iTime.value = clock.getElapsedTime();
-    shaderRef.current.uniforms.iResolution.value.set(size.width, size.height);
+    if (shaderRef.current) {
+      shaderRef.current.uniforms.iTime.value = clock.getElapsedTime();
+      shaderRef.current.uniforms.iResolution.value.set(size.width, size.height);
+    }
   });
 
   return (

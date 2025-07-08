@@ -1,9 +1,8 @@
-// @ts-nocheck
 "use client";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useThree } from "@react-three/fiber";
 import * as THREE from "three";
-import { useMemo, useRef, forwardRef } from "react";
+import { useMemo, useRef } from "react";
 
 // const ShaderBackground = () => {
 //   const { size } = useThree();
@@ -47,7 +46,7 @@ import { useMemo, useRef, forwardRef } from "react";
 // };
 
 const Scene1 = () => {
-  const meshRef = useRef();
+  const meshRef = useRef<THREE.Mesh>(null);
   const { viewport, size } = useThree();
 
   const shaderMaterial = useMemo(() => {
