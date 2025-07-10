@@ -1,4 +1,5 @@
 import bgs from "@/info/bginfo";
+import ButtonDiv from "./_components/ButtonDiv";
 
 export default async function layout({
   children,
@@ -8,8 +9,6 @@ export default async function layout({
   params: Promise<{ name: string }>;
 }) {
   const name = (await params).name;
-  //   console.log(name);
-
   const bg = bgs.find((el) => el.slug === name);
 
   return (
@@ -17,7 +16,8 @@ export default async function layout({
       <div className="mt-10">
         <h1 className="text-5xl font-semibold mb-5">{bg?.name}</h1>
       </div>
-      <div className="my-5">{children}</div>
+      <ButtonDiv />
+      <div className="my-2">{children}</div>
     </div>
   );
 }

@@ -4,47 +4,6 @@ import { useThree } from "@react-three/fiber";
 import * as THREE from "three";
 import { useMemo, useRef } from "react";
 
-// const ShaderBackground = () => {
-//   const { size } = useThree();
-//   const timeRef = useRef(0);
-
-//   const shader = useMemo(
-//     () => ({
-//       uniforms: {
-//         iTime: { value: 0 },
-//         iResolution: { value: new THREE.Vector3() },
-//       },
-//       vertexShader: `
-//       varying vec2 vUv;
-//       void main() {
-//         vUv = uv;
-//         gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
-//       }
-//     `,
-//       fragmentShader: `
-//       uniform float iTime;
-//       uniform vec3 iResolution;
-//       varying vec2 vUv;
-
-//       void main() {
-//         vec2 uv = vUv;
-//         vec3 col = 0.5 + 0.5 * cos(iTime + uv.xyx * 10.0 + vec3(0.0, 2.0, 4.0));
-//         gl_FragColor = vec4(col, 1.0);
-//       }
-//     `,
-//     }),
-//     []
-//   );
-
-//   useFrame(({ clock }) => {
-//     timeRef.current = clock.getElapsedTime();
-//     shader.uniforms.iTime.value = timeRef.current;
-//     shader.uniforms.iResolution.value.set(size.width, size.height, 1);
-//   });
-
-//   return null;
-// };
-
 const Scene1 = () => {
   const meshRef = useRef<THREE.Mesh>(null);
   const { viewport, size } = useThree();
