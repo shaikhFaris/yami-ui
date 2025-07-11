@@ -14,7 +14,7 @@ const eslintConfig = [
   {
     rules: {
       semi: ["warn", "always"],
-      quotes: ["warn", "double"],
+      // quotes: ["warn", "double"],
       "no-console": "warn",
       eqeqeq: "error",
       "no-unused-vars": "error",

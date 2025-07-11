@@ -32,6 +32,7 @@ export default function Views({
     return () => {
       updateView("preview");
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
