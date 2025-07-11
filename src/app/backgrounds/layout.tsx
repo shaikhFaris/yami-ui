@@ -9,6 +9,7 @@ export default function layout({ children }: { children: React.ReactNode }) {
         <Sidebar />
         {children}
       </div>
+      {/* <div className="">footer</div> */}
     </div>
   );
 }
