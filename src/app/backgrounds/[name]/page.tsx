@@ -6,7 +6,6 @@ import { notFound } from "next/navigation";
 
 export default async function page({ params }: { params: Promise<{ name: string }> }) {
   const name = (await params).name;
-
   let Component: React.ReactNode = null;
 
   if (name === "metallic-waves") {
