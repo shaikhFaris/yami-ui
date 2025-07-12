@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
 import NavMenuButton from "./NavMenuButton";
+
 export default function Navbar() {
   return (
     <div className="px-3 md:px-10 py-4 border-b w-full flex justify-between border-[var(--border)] z-50 bg-[var(--background)]">
@@ -12,6 +13,9 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="flex items-center justify-center gap-5">
+        <Link href={"/backgrounds"} className="hover:text-[var(--primary)] duration-150 ">
+          Backgrounds
+        </Link>
         <a
           href="https://github.com/shaikhFaris/yami-ui"
           target="_blank"

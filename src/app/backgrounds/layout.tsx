@@ -1,10 +1,10 @@
-import Navbar from "@/components/Navbar";
+// import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
 
 export default function layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="h-screen overflow-hidden flex flex-col">
-      <Navbar />
+      {/* <Navbar /> */}
       {/* client component */}
       <Sidebar smallDevice={true} />
       <div className="flex flex-1">

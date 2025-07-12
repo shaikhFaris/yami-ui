@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Yami UI",
@@ -15,6 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-[var(--background)] font-[var(--font-sans)] text-[var(--foreground)] flex justify-center">
         <div className="max-w-screen-2xl min-h-screen w-full border border-[var(--border)]">
+          <Navbar />
           {children}
         </div>
       </body>
