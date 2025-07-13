@@ -17,14 +17,14 @@ export default function HomeNav() {
         <a
           href="https://github.com/shaikhFaris/yami-ui"
           target="_blank"
-          className="text-2xl duration-150 lg:hover:text-[var(--primary)] rounded-md border-[var(--border)] bg-[var(--background)] border p-1.5 "
+          className="text-xl md:text-2xl duration-150 lg:hover:text-[var(--primary)] rounded-md border-[var(--border)] bg-[var(--background)] border p-1.5 "
         >
           <FaGithub />
         </a>
         <a
           href="https://x.com/faris_shaikh247"
           target="_blank"
-          className="text-2xl duration-150 lg:hover:text-[var(--primary)] rounded-md border-[var(--border)] bg-[var(--background)] border p-1.5 "
+          className="text-xl md:text-2xl duration-150 lg:hover:text-[var(--primary)] rounded-md border-[var(--border)] bg-[var(--background)] border p-1.5 "
         >
           <FaXTwitter />
         </a>

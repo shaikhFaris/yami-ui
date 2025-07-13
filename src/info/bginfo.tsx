@@ -2,7 +2,9 @@ const bgs = [
   {
     slug: "metallic-waves",
     name: "Metallic Waves",
+    filename: "MetallicWaves.tsx",
     fullCode: `
+
     "use client";
     
     import { Canvas, useFrame } from "@react-three/fiber";
@@ -142,7 +144,9 @@ const bgs = [
   {
     slug: "black-hole",
     name: "Black Hole",
+    filename: "BlackHole.tsx",
     fullCode: `
+
     "use client";
     import { Canvas, useFrame } from "@react-three/fiber";
     import { useThree } from "@react-three/fiber";
@@ -254,7 +258,9 @@ const bgs = [
   {
     slug: "shader-art",
     name: "Shader Art",
+    filename: "ShaderArt.tsx",
     fullCode: `
+
     "use client";
     import { Canvas, useFrame } from "@react-three/fiber";
     import { useThree } from "@react-three/fiber";

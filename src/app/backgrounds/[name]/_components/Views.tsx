@@ -44,6 +44,9 @@ export default function Views({
       ) : (
         <div className="pb-5">
           <pre className="border border-[var(--border)] relative overflow-scroll rounded-[var(--radius)] h-[60vh] w-full">
+            <div className="absolute md:text-lg font-medium top-0 py-2 px-4 border border-[var(--border)] rounded-[var(--radius)] left-0">
+              {info?.filename}
+            </div>
             <div
               className="absolute right-4 top-2 border hover:bg-[var(--accent)] duration-150 p-2 border-[var(--border)] text-xl rounded-[var(--radius)] "
               onClick={() => {
