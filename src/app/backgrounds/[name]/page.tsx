@@ -1,10 +1,12 @@
 import BlackHole from "@/bg-components/BlackHole";
 import MetallicWaves from "@/bg-components/MetallicWaves";
 import ShaderArt from "@/bg-components/ShaderArt";
+import LightTunnel from "@/bg-components/LightTunnel";
 import Views from "./_components/Views";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import bgs from "@/info/bginfo";
+import Phosphor from "@/bg-components/Phosphorous";
 
 // dynamic metadata
 export async function generateMetadata({
@@ -30,6 +32,10 @@ export default async function page({ params }: { params: Promise<{ name: string 
     Component = <BlackHole width="100%" height="80vh" />;
   } else if (name === "shader-art") {
     Component = <ShaderArt width="100%" height="80vh" />;
+  } else if (name === "light-tunnel") {
+    Component = <LightTunnel width="100%" height="80vh" />;
+  } else if (name === "phosphorous") {
+    Component = <Phosphor width="100%" height="80vh" />;
   } else {
     notFound();
   }
