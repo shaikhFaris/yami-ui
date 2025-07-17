@@ -1,3 +1,9 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Backgrounds",
+};
+
 export default function page() {
   return (
     <div className="p-5 flex flex-1 justify-center items-center">

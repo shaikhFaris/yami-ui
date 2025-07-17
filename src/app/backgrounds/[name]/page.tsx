@@ -3,6 +3,22 @@ import MetallicWaves from "@/bg-components/MetallicWaves";
 import ShaderArt from "@/bg-components/ShaderArt";
 import Views from "./_components/Views";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
+import bgs from "@/info/bginfo";
+
+// dynamic metadata
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ name: string }>;
+}): Promise<Metadata> {
+  const name = (await params).name;
+  const bg = bgs.find((el) => el.slug === name);
+
+  return {
+    title: bg?.name,
+  };
+}
 
 export default async function page({ params }: { params: Promise<{ name: string }> }) {
   const name = (await params).name;
